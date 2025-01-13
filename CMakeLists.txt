@@ -8,10 +8,10 @@ SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build/bin)
 
 find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
 
-file(GLOB SOURCES "*.cpp")
+file(GLOB SOURCES "src/*.cpp")
 
 add_executable(yuvDemo-cpp ${SOURCES})
 
 target_link_libraries(yuvDemo-cpp Qt5::Core Qt5::Widgets)
 
-target_include_directories(yuvDemo-cpp PRIVATE ${PROJECT_SOURCE_DIR})
+target_include_directories(yuvDemo-cpp PRIVATE ${PROJECT_SOURCE_DIR}/include)
