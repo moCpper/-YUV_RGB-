@@ -3,7 +3,7 @@
 ## 构建
 
 ```shell
-git clone https://github.com/moCpper/viewer
+git clone https://github.com/moCpper/yuv_rgb
 cd yuv_rgb
 mkdir build
 cd build
