@@ -7,11 +7,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build/bin)
 
 find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
+find_package(FFMPEG REQUIRED)
 
 file(GLOB SOURCES "src/*.cpp")
 
 add_executable(yuvDemo-cpp ${SOURCES})
 
-target_link_libraries(yuvDemo-cpp Qt5::Core Qt5::Widgets)
+target_link_libraries(yuvDemo-cpp Qt5::Core Qt5::Widgets ${FFMPEG_LIBRARIES})
 
-target_include_directories(yuvDemo-cpp PRIVATE ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(yuvDemo-cpp PRIVATE ${PROJECT_SOURCE_DIR}/include ${FFMPEG_INCLUDE_DIRS})
