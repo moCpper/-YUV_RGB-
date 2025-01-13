@@ -1,4 +1,4 @@
-这是一段demo，用于测试二路播放YUV/RGB
+这是一段demo，用于测试二路播放YUV/RGBA
 
 ## 构建
 
