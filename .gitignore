@@ -1,0 +1,6 @@
+xvideo_view/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.qrc
